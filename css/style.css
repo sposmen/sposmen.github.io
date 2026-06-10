@@ -253,6 +253,14 @@ html[data-lang="es"] .en { display: none !important; }
   color: var(--accent);
 }
 
+.about-langs {
+  margin-top: 1.5rem;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+}
+
+.about-langs strong { color: var(--text); }
+
 /* ---------- Projects ---------- */
 .projects-grid {
   display: grid;
@@ -328,6 +336,14 @@ html[data-lang="es"] .en { display: none !important; }
   font-weight: 600;
   font-size: 0.9rem;
 }
+
+.project-demo-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 1.5rem;
+}
+
+.project-demo-row .project-demo { margin-top: 1.25rem; }
 
 .projects-more {
   margin-top: 2.5rem;
@@ -421,6 +437,47 @@ html[data-lang="es"] .en { display: none !important; }
 .education p { color: var(--text-muted); font-size: 0.95rem; }
 .education p + p { margin-top: 0.4rem; }
 .education strong { color: var(--text); }
+
+/* ---------- Recommendations ---------- */
+.recs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.rec-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.rec-card blockquote p {
+  color: var(--text);
+  font-size: 0.98rem;
+  font-style: italic;
+}
+
+.rec-card figcaption {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.rec-card figcaption strong {
+  font-family: var(--font-heading);
+  color: var(--heading);
+}
+
+.rec-card figcaption span {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
 
 /* ---------- Contact ---------- */
 .contact-container { text-align: center; }
