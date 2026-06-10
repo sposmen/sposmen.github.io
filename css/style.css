@@ -337,6 +337,14 @@ html[data-lang="es"] .en { display: none !important; }
   font-size: 0.9rem;
 }
 
+.project-demo-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 1.5rem;
+}
+
+.project-demo-row .project-demo { margin-top: 1.25rem; }
+
 .projects-more {
   margin-top: 2.5rem;
   text-align: center;
