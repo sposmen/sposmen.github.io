@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,11 +25,17 @@
   <nav class="nav">
     <div class="nav-inner">
       <a href="#top" class="nav-logo">jaime-giraldo<span class="accent">.com</span></a>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
+      <div class="nav-right">
+        <div class="nav-links">
+          <a href="#about"><span class="en">About</span><span class="es">Sobre mí</span></a>
+          <a href="#projects"><span class="en">Projects</span><span class="es">Proyectos</span></a>
+          <a href="#experience"><span class="en">Experience</span><span class="es">Experiencia</span></a>
+          <a href="#contact"><span class="en">Contact</span><span class="es">Contacto</span></a>
+        </div>
+        <div class="lang-toggle" role="group" aria-label="Language / Idioma">
+          <button type="button" data-set-lang="en" aria-label="English">EN</button>
+          <button type="button" data-set-lang="es" aria-label="Español">ES</button>
+        </div>
       </div>
     </div>
   </nav>
@@ -37,18 +43,25 @@
   <header class="hero" id="top">
     <div class="hero-glow" aria-hidden="true"></div>
     <div class="container">
-      <p class="hero-kicker">Hi, I'm</p>
+      <p class="hero-kicker"><span class="en">Hi, I'm</span><span class="es">Hola, soy</span></p>
       <h1 class="hero-title">Jaime Giraldo</h1>
-      <h2 class="hero-subtitle">Senior Software Engineer</h2>
+      <h2 class="hero-subtitle"><span class="en">Senior Software Engineer</span><span class="es">Ingeniero de Software Senior</span></h2>
       <p class="hero-tagline">
-        I design and build full-stack systems that meet real business goals —
-        15+ years shipping software for e-commerce, healthcare, education,
-        banking and real estate.
+        <span class="en">
+          I design and build full-stack systems that meet real business goals —
+          15+ years shipping software for e-commerce, healthcare, education,
+          banking and real estate.
+        </span>
+        <span class="es">
+          Diseño y construyo sistemas full-stack que cumplen objetivos reales de
+          negocio — más de 15 años creando software para e-commerce, salud,
+          educación, banca y bienes raíces.
+        </span>
       </p>
-      <p class="hero-location">📍 Mission, BC, Canada</p>
+      <p class="hero-location"><span class="en">📍 Mission, BC, Canada</span><span class="es">📍 Mission, BC, Canadá</span></p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="#projects">View my work</a>
-        <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        <a class="btn btn-primary" href="#projects"><span class="en">View my work</span><span class="es">Ver mi trabajo</span></a>
+        <a class="btn btn-ghost" href="#contact"><span class="en">Get in touch</span><span class="es">Contáctame</span></a>
       </div>
       <div class="hero-social">
         <a href="https://github.com/sposmen" target="_blank" rel="noopener" aria-label="GitHub">
@@ -68,25 +81,43 @@
 
     <section id="about" class="section">
       <div class="container">
-        <h2 class="section-title"><span class="section-number">01.</span> About me</h2>
+        <h2 class="section-title"><span class="section-number">01.</span> <span class="en">About me</span><span class="es">Sobre mí</span></h2>
         <div class="about-grid">
           <div class="about-text">
-            <p>
-              I'm an accomplished software engineer with over 15 years of experience,
-              specialized in designing and optimizing information systems to meet business
-              objectives and customer needs across e-commerce, healthcare, education,
-              banking and real estate.
-            </p>
-            <p>
-              My career has been driven by a deep passion for technology — system
-              maintenance, architectural improvements, infrastructure optimization and
-              end-user training. Known for a proactive, organized and creative approach,
-              I thrive in collaborative environments with a methodical and precise style,
-              delivering full-stack solutions with a goal-oriented mindset.
-            </p>
+            <div class="en">
+              <p>
+                I'm an accomplished software engineer with over 15 years of experience,
+                specialized in designing and optimizing information systems to meet business
+                objectives and customer needs across e-commerce, healthcare, education,
+                banking and real estate.
+              </p>
+              <p>
+                My career has been driven by a deep passion for technology — system
+                maintenance, architectural improvements, infrastructure optimization and
+                end-user training. Known for a proactive, organized and creative approach,
+                I thrive in collaborative environments with a methodical and precise style,
+                delivering full-stack solutions with a goal-oriented mindset.
+              </p>
+            </div>
+            <div class="es">
+              <p>
+                Soy un ingeniero de software con más de 15 años de experiencia,
+                especializado en diseñar y optimizar sistemas de información para cumplir
+                objetivos de negocio y necesidades de clientes en e-commerce, salud,
+                educación, banca y bienes raíces.
+              </p>
+              <p>
+                Mi carrera ha estado impulsada por una profunda pasión por la tecnología —
+                mantenimiento de sistemas, mejoras de arquitectura, optimización de
+                infraestructura y formación de usuarios. Con un enfoque proactivo,
+                organizado y creativo, disfruto los entornos colaborativos con un estilo
+                metódico y preciso, entregando soluciones full-stack con una mentalidad
+                orientada a resultados.
+              </p>
+            </div>
           </div>
           <div class="about-skills">
-            <h3>Technologies I work with</h3>
+            <h3><span class="en">Technologies I work with</span><span class="es">Tecnologías con las que trabajo</span></h3>
             <ul class="skills-list">
               <li>Ruby on Rails</li>
               <li>Node.js</li>
@@ -108,7 +139,7 @@
 
     <section id="projects" class="section section-alt">
       <div class="container">
-        <h2 class="section-title"><span class="section-number">02.</span> Featured projects</h2>
+        <h2 class="section-title"><span class="section-number">02.</span> <span class="en">Featured projects</span><span class="es">Proyectos destacados</span></h2>
         <div class="projects-grid">
 
           <article class="project-card">
@@ -124,16 +155,63 @@
               </div>
             </div>
             <h3 class="project-title">Analytic Hierarchy Process</h3>
-            <p class="project-desc">
-              A single-page app that guides you through the AHP decision-making method:
-              define a goal, options and weighted criteria, compare them pairwise on the
-              Saaty scale, and get a ranked score for every option — with full visibility
-              into the matrices and normalization behind the result.
-            </p>
+            <div class="project-desc">
+              <p class="en">
+                A single-page app that guides you through the AHP decision-making method
+                in 7 steps: define a goal, options and multi-level weighted criteria,
+                compare them pairwise on the Saaty 1–9 scale, and get a ranked score for
+                every option. Save and load sessions as <code>.ahp</code> files, and toggle
+                "Show Process" to inspect the full matrices and normalization behind the result.
+              </p>
+              <p class="es">
+                Una SPA que te guía por el método de decisión AHP en 7 pasos: define un
+                objetivo, opciones y criterios ponderados multinivel, compáralos por pares
+                en la escala Saaty 1–9 y obtén un puntaje ordenado para cada opción.
+                Guarda y carga sesiones como archivos <code>.ahp</code>, y activa
+                "Show Process" para inspeccionar las matrices y la normalización detrás
+                del resultado.
+              </p>
+            </div>
             <ul class="project-tags">
-              <li>JavaScript</li><li>SPA</li><li>Decision science</li>
+              <li>JavaScript</li><li>SPA</li><li class="en">Decision science</li><li class="es">Ciencia de decisiones</li>
             </ul>
-            <a class="project-demo" href="https://www.jaime-giraldo.com/Analytic-Hierarchy-Process/" target="_blank" rel="noopener">Try the live app →</a>
+            <a class="project-demo" href="https://www.jaime-giraldo.com/Analytic-Hierarchy-Process/" target="_blank" rel="noopener"><span class="en">Try the live app →</span><span class="es">Prueba la app →</span></a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-icon">🍁</span>
+              <div class="project-links">
+                <a href="https://github.com/sposmen/Citizenship-2026" target="_blank" rel="noopener" aria-label="Citizenship 2026 repository">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.15c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.34.96.1-.74.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.58.23 2.75.11 3.04.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.78 1.05.78 2.12v3.14c0 .3.21.66.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                </a>
+                <a href="https://www.jaime-giraldo.com/Citizenship-2026/" target="_blank" rel="noopener" aria-label="Citizenship 2026 live app">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Canadian Citizenship Test 2026</h3>
+            <div class="project-desc">
+              <p class="en">
+                A free, browser-based practice simulator for the Canadian citizenship test —
+                no login, no install. Each session draws 20 random questions from a pool of
+                438 covering the official <em>Discover Canada</em> guide, scores pass/fail at
+                the real 75% threshold, encodes the session in the URL so a reload restores
+                your exact questions and progress, and ends with a review of every missed answer.
+              </p>
+              <p class="es">
+                Un simulador gratuito en el navegador para practicar el examen de ciudadanía
+                canadiense — sin registro ni instalación. Cada sesión toma 20 preguntas
+                aleatorias de un banco de 438 basado en la guía oficial <em>Discover
+                Canada</em>, califica con el umbral real del 75%, codifica la sesión en la
+                URL para que al recargar recuperes tus preguntas y progreso exactos, y
+                termina con un repaso de cada respuesta fallada.
+              </p>
+            </div>
+            <ul class="project-tags">
+              <li>JavaScript</li><li>Vite</li><li class="en">Education</li><li class="es">Educación</li>
+            </ul>
+            <a class="project-demo" href="https://www.jaime-giraldo.com/Citizenship-2026/" target="_blank" rel="noopener"><span class="en">Try the live app →</span><span class="es">Prueba la app →</span></a>
           </article>
 
           <article class="project-card">
@@ -146,15 +224,27 @@
               </div>
             </div>
             <h3 class="project-title">GitHub PR Tree Render</h3>
-            <p class="project-desc">
-              A visualization tool for stacked pull requests: point it at any repository
-              and it renders the branch and PR dependency structure as a tree, making it
-              easy to understand how chains of PRs relate before reviewing or merging.
-            </p>
+            <div class="project-desc">
+              <p class="en">
+                A visualization tool for stacked pull requests: open
+                <code>/&lt;owner&gt;/&lt;repo&gt;/&lt;branch&gt;</code> and it renders the
+                branch and PR dependency structure as a tree, making chains of PRs easy to
+                understand before reviewing or merging. Connects to the GitHub API with your
+                token and caches repo data for 30 minutes for speed and reliability.
+              </p>
+              <p class="es">
+                Una herramienta de visualización para pull requests apilados: abre
+                <code>/&lt;owner&gt;/&lt;repo&gt;/&lt;branch&gt;</code> y dibuja la
+                estructura de dependencias de ramas y PRs como un árbol, haciendo fáciles
+                de entender las cadenas de PRs antes de revisar o mergear. Se conecta a la
+                API de GitHub con tu token y cachea la información del repo por 30 minutos
+                para mayor velocidad y confiabilidad.
+              </p>
+            </div>
             <ul class="project-tags">
               <li>SailsJS</li><li>React</li><li>GitHub API</li>
             </ul>
-            <a class="project-demo" href="https://github.com/sposmen/gh_pr_tree_render" target="_blank" rel="noopener">View on GitHub →</a>
+            <a class="project-demo" href="https://github.com/sposmen/gh_pr_tree_render" target="_blank" rel="noopener"><span class="en">View on GitHub →</span><span class="es">Ver en GitHub →</span></a>
           </article>
 
           <article class="project-card">
@@ -167,99 +257,142 @@
               </div>
             </div>
             <h3 class="project-title">JSON Dynamic Viewer</h3>
-            <p class="project-desc">
-              A React library for rendering arbitrarily deep JSON structures with
-              per-key configurable display — choose how each field is presented and
-              explore complex payloads without writing custom UI for every shape of data.
-            </p>
+            <div class="project-desc">
+              <p class="en">
+                A React library for rendering arbitrarily deep JSON structures with
+                per-key configurable display — choose how each field is presented and
+                explore complex payloads without writing custom UI for every shape of data.
+              </p>
+              <p class="es">
+                Una librería de React para renderizar estructuras JSON de profundidad
+                arbitraria con visualización configurable por llave — decide cómo se
+                presenta cada campo y explora payloads complejos sin escribir UI a la
+                medida para cada forma de datos.
+              </p>
+            </div>
             <ul class="project-tags">
-              <li>React</li><li>JavaScript</li><li>Library</li>
+              <li>React</li><li>JavaScript</li><li class="en">Library</li><li class="es">Librería</li>
             </ul>
-            <a class="project-demo" href="https://github.com/sposmen/json_dynamic_viewer" target="_blank" rel="noopener">View on GitHub →</a>
+            <a class="project-demo" href="https://github.com/sposmen/json_dynamic_viewer" target="_blank" rel="noopener"><span class="en">View on GitHub →</span><span class="es">Ver en GitHub →</span></a>
           </article>
 
         </div>
         <p class="projects-more">
-          More experiments and tools on <a href="https://github.com/sposmen?tab=repositories" target="_blank" rel="noopener">my GitHub profile →</a>
+          <span class="en">More experiments and tools on <a href="https://github.com/sposmen?tab=repositories" target="_blank" rel="noopener">my GitHub profile →</a></span>
+          <span class="es">Más experimentos y herramientas en <a href="https://github.com/sposmen?tab=repositories" target="_blank" rel="noopener">mi perfil de GitHub →</a></span>
         </p>
       </div>
     </section>
 
     <section id="experience" class="section">
       <div class="container">
-        <h2 class="section-title"><span class="section-number">03.</span> Experience</h2>
+        <h2 class="section-title"><span class="section-number">03.</span> <span class="en">Experience</span><span class="es">Experiencia</span></h2>
         <ol class="timeline">
 
           <li class="timeline-item">
-            <div class="timeline-meta">June 2020 — Present</div>
+            <div class="timeline-meta"><span class="en">June 2020 — Present</span><span class="es">Junio 2020 — Presente</span></div>
             <h3 class="timeline-role">Senior Web Developer · <span class="timeline-company">REW Digital Ltd.</span></h3>
             <p class="timeline-place">Vancouver, BC</p>
-            <p>
+            <p class="en">
               Real estate platform connecting agents with home and rental seekers.
               Standardized geographies across groups, enabling geography-based sales and
               release strategies and cutting manual overhead for sales agents. Led the
               Webpack-to-Vite migration, paving the way to Rails 7 with no disruption to users.
             </p>
+            <p class="es">
+              Plataforma inmobiliaria que conecta agentes con compradores y arrendatarios.
+              Estandaricé las geografías entre grupos, habilitando estrategias de ventas y
+              lanzamientos por geografía y reduciendo el trabajo manual de los agentes.
+              Lideré la migración de Webpack a Vite, abriendo el camino a Rails 7 sin
+              afectar a los usuarios.
+            </p>
             <ul class="timeline-tags"><li>Ruby on Rails</li><li>React</li><li>GraphQL</li><li>Redis</li><li>PostgreSQL</li><li>AWS</li></ul>
           </li>
 
           <li class="timeline-item">
-            <div class="timeline-meta">December 2018 — June 2020</div>
+            <div class="timeline-meta"><span class="en">December 2018 — June 2020</span><span class="es">Diciembre 2018 — Junio 2020</span></div>
             <h3 class="timeline-role">Senior Ruby Developer · <span class="timeline-company">BairesDev LLC</span></h3>
-            <p class="timeline-place">San Francisco, CA (remote)</p>
-            <p>
+            <p class="timeline-place"><span class="en">San Francisco, CA (remote)</span><span class="es">San Francisco, CA (remoto)</span></p>
+            <p class="en">
               Multi-app Ruby/Rails ecosystems for banking and HR products. Strengthened the
               foundations of Chime's Credit Builder by integrating platforms through GraphQL
               and JSON:API, and built Yardstik's platform from scratch — from a Rails Engine
               to a React + Auth0 integrated application.
             </p>
+            <p class="es">
+              Ecosistemas multi-aplicación en Ruby/Rails para productos de banca y recursos
+              humanos. Fortalecí las bases del Credit Builder de Chime integrando
+              plataformas mediante GraphQL y JSON:API, y construí la plataforma de Yardstik
+              desde cero — desde un Rails Engine hasta una aplicación integrada con React y Auth0.
+            </p>
             <ul class="timeline-tags"><li>Ruby on Rails</li><li>GraphQL</li><li>Docker</li><li>MySQL</li></ul>
           </li>
 
           <li class="timeline-item">
-            <div class="timeline-meta">October 2014 — December 2018</div>
+            <div class="timeline-meta"><span class="en">October 2014 — December 2018</span><span class="es">Octubre 2014 — Diciembre 2018</span></div>
             <h3 class="timeline-role">Specialist / Staff Software Engineer · <span class="timeline-company">Endava</span></h3>
-            <p class="timeline-place">Medellín, Colombia</p>
-            <p>
+            <p class="timeline-place"><span class="en">Medellín, Colombia</span><span class="es">Medellín, Colombia</span></p>
+            <p class="en">
               Full-stack work on Summon, a big-data search engine for libraries worldwide
               (Ruby/Sinatra, AngularJS, Cassandra, Solr). Improved document management
               performance by decoupling hierarchical tree structures over TCP sockets, and
               served as internal consultant on architecture and tech trends.
             </p>
+            <p class="es">
+              Trabajo full-stack en Summon, un buscador big-data para bibliotecas de todo el
+              mundo (Ruby/Sinatra, AngularJS, Cassandra, Solr). Mejoré el rendimiento de la
+              gestión documental desacoplando estructuras de árbol jerárquicas sobre sockets
+              TCP, y fui consultor interno en arquitectura y tendencias tecnológicas.
+            </p>
             <ul class="timeline-tags"><li>Ruby</li><li>Node.js</li><li>AngularJS</li><li>Cassandra</li><li>Solr</li></ul>
           </li>
 
           <li class="timeline-item">
-            <div class="timeline-meta">July 2014 — September 2014</div>
+            <div class="timeline-meta"><span class="en">July 2014 — September 2014</span><span class="es">Julio 2014 — Septiembre 2014</span></div>
             <h3 class="timeline-role">Senior Software Engineer · <span class="timeline-company">AllTheRooms Inc.</span></h3>
             <p class="timeline-place">Medellín, Colombia</p>
-            <p>
+            <p class="en">
               Full-stack JavaScript/Node.js services — streams, sockets and MongoDB —
               powering a meta-search engine for accommodation rentals worldwide.
+            </p>
+            <p class="es">
+              Servicios full-stack en JavaScript/Node.js — streams, sockets y MongoDB —
+              detrás de un meta-buscador de alojamientos en renta alrededor del mundo.
             </p>
             <ul class="timeline-tags"><li>Node.js</li><li>AngularJS</li><li>MongoDB</li><li>Redis</li><li>AWS</li></ul>
           </li>
 
           <li class="timeline-item">
-            <div class="timeline-meta">April 2012 — June 2014</div>
+            <div class="timeline-meta"><span class="en">April 2012 — June 2014</span><span class="es">Abril 2012 — Junio 2014</span></div>
             <h3 class="timeline-role">Senior Software Developer · <span class="timeline-company">Linden Learning (Victory Productions)</span></h3>
             <p class="timeline-place">Medellín, Colombia</p>
-            <p>
+            <p class="en">
               Solution analyst for web portability between mobile and desktop B2C apps
               in medical and educational environments, working across Node.js, Ruby and PHP
               stacks with AWS cloud infrastructure consulting.
+            </p>
+            <p class="es">
+              Analista de soluciones para portabilidad web entre aplicaciones B2C móviles y
+              de escritorio en entornos médicos y educativos, trabajando con stacks de
+              Node.js, Ruby y PHP, y consultoría de infraestructura en la nube con AWS.
             </p>
             <ul class="timeline-tags"><li>Ruby on Rails</li><li>Node.js</li><li>EmberJS</li><li>PHP</li><li>AWS</li></ul>
           </li>
 
           <li class="timeline-item">
             <div class="timeline-meta">2006 — 2012</div>
-            <h3 class="timeline-role">Earlier roles · <span class="timeline-company">S4DS, Imagine Ltda, KNOWBI</span></h3>
+            <h3 class="timeline-role"><span class="en">Earlier roles</span><span class="es">Roles anteriores</span> · <span class="timeline-company">S4DS, Imagine Ltda, KNOWBI</span></h3>
             <p class="timeline-place">Medellín, Colombia</p>
-            <p>
+            <p class="en">
               Direct-sales platform development and integrations (Joomla, Moodle, vTiger),
               project architecture for custom web applications, BPDM solutions and
               CMS-based platforms — the PHP/Java years that built the foundation.
+            </p>
+            <p class="es">
+              Desarrollo de plataformas de venta directa e integraciones (Joomla, Moodle,
+              vTiger), arquitectura de proyectos para aplicaciones web a la medida,
+              soluciones BPDM y plataformas sobre CMS — los años de PHP/Java que
+              construyeron la base.
             </p>
             <ul class="timeline-tags"><li>PHP</li><li>Java</li><li>MySQL</li><li>Joomla</li><li>AWS EC2</li></ul>
           </li>
@@ -267,21 +400,33 @@
         </ol>
 
         <div class="education">
-          <h3>Education</h3>
-          <p><strong>System Information Specialist</strong> — Universidad EAFIT, Medellín (2012 — 2013)</p>
-          <p><strong>Computer Science</strong> — Universidad EAFIT, Medellín (1999 — 2009)</p>
+          <h3><span class="en">Education</span><span class="es">Educación</span></h3>
+          <p>
+            <span class="en"><strong>System Information Specialist</strong> — Universidad EAFIT, Medellín (2012 — 2013)</span>
+            <span class="es"><strong>Especialista en Sistemas de Información</strong> — Universidad EAFIT, Medellín (2012 — 2013)</span>
+          </p>
+          <p>
+            <span class="en"><strong>Computer Science</strong> — Universidad EAFIT, Medellín (1999 — 2009)</span>
+            <span class="es"><strong>Ingeniería de Sistemas</strong> — Universidad EAFIT, Medellín (1999 — 2009)</span>
+          </p>
         </div>
       </div>
     </section>
 
     <section id="contact" class="section section-alt">
       <div class="container contact-container">
-        <h2 class="section-title centered"><span class="section-number">04.</span> Get in touch</h2>
+        <h2 class="section-title centered"><span class="section-number">04.</span> <span class="en">Get in touch</span><span class="es">Hablemos</span></h2>
         <p class="contact-text">
-          Whether you have a project in mind, a role to discuss, or just want to talk
-          about software architecture — my inbox is always open.
+          <span class="en">
+            Whether you have a project in mind, a role to discuss, or just want to talk
+            about software architecture — my inbox is always open.
+          </span>
+          <span class="es">
+            Si tienes un proyecto en mente, un rol que discutir, o simplemente quieres
+            hablar de arquitectura de software — mi bandeja siempre está abierta.
+          </span>
         </p>
-        <a class="btn btn-primary btn-lg" href="mailto:jaime.giraldo.jimenez@gmail.com">Say hello</a>
+        <a class="btn btn-primary btn-lg" href="mailto:jaime.giraldo.jimenez@gmail.com"><span class="en">Say hello</span><span class="es">Escríbeme</span></a>
         <div class="contact-links">
           <a href="https://github.com/sposmen" target="_blank" rel="noopener">GitHub</a>
           <span aria-hidden="true">·</span>
@@ -302,6 +447,34 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    (function () {
+      const TITLES = {
+        en: 'Jaime Giraldo — Senior Software Engineer',
+        es: 'Jaime Giraldo — Ingeniero de Software Senior'
+      };
+
+      function setLang(lang, persist) {
+        document.documentElement.setAttribute('data-lang', lang);
+        document.documentElement.setAttribute('lang', lang);
+        document.title = TITLES[lang];
+        document.querySelectorAll('.lang-toggle button').forEach((btn) => {
+          btn.classList.toggle('active', btn.dataset.setLang === lang);
+        });
+        if (persist) {
+          try { localStorage.setItem('lang', lang); } catch (e) { /* private mode */ }
+        }
+      }
+
+      let saved = null;
+      try { saved = localStorage.getItem('lang'); } catch (e) { /* private mode */ }
+      const initial = saved || ((navigator.language || '').toLowerCase().startsWith('es') ? 'es' : 'en');
+      setLang(initial, false);
+
+      document.querySelectorAll('.lang-toggle button').forEach((btn) => {
+        btn.addEventListener('click', () => setLang(btn.dataset.setLang, true));
+      });
+    })();
 
     if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       const observer = new IntersectionObserver((entries) => {
